@@ -1,18 +1,7 @@
-   // revolutions per second
-      var angularSpeed = 0.1; 
-      var lastTime = 0;
-		var scaleState = 1; 
- 
+
       // this function is executed on each animation frame
       function animate(){
-        // update
-       // var time = (new Date()).getTime();
-      // var timeDiff = time - lastTime;
-       // var angleChange = angularSpeed * timeDiff * 2 * Math.PI / 1000;
-		 // cube.rotation.x += angleChange;        
-       // cube.rotation.y += angleChange;
-      //  lastTime = time;
- 
+
         // render
         renderer.render(scene, camera);
  

@@ -37,14 +37,15 @@
 		var geometry = new THREE.SphereGeometry( 100, 32, 32 ); 
 		var material = new THREE.MeshBasicMaterial( {color: 0xffff00} ); 
 	
-		
+		/*
 		var sphere = new THREE.Mesh( geometry, material ); 
 		sphere.position.x = 400;
 		sphere.position.y = 400;
 		sphere.position.z = 400;
 		scene.add( sphere );          
+		*/
 
-		
+		/*
       var stone_material = new THREE.MeshLambertMaterial({
         map: THREE.ImageUtils.loadTexture('images/stone.jpg')
        });	                
@@ -58,17 +59,18 @@
        var grass_material = new THREE.MeshLambertMaterial({
        	map: texture
        });	
+       */
       // cube
-      /*
+      
       var cube = new THREE.Mesh(new THREE.BoxGeometry(200, 200, 200), new THREE.MeshLambertMaterial({
         color: '#' + currentColorCode 
       }));
-*/
 
-		var ground = new THREE.Mesh(new THREE.BoxGeometry(10000, 10000, 10), grass_material)
-		ground.position.y=-200;		
+
+	//	var ground = new THREE.Mesh(new THREE.BoxGeometry(10000, 10000, 10), grass_material)
+	//	ground.position.y=-200;		
 		//scene.add(ground);
-      var cube = new THREE.Mesh(new THREE.BoxGeometry(200, 200, 200), stone_material);
+    //  var cube = new THREE.Mesh(new THREE.BoxGeometry(200, 200, 200), stone_material);
       cube.overdraw = true;
       cube.rotation.x = Math.PI * 0.1;
       scene.add(cube);
@@ -154,10 +156,10 @@
     	 2*cube.geometry.vertices[0].x*scaleState, 
     	 2*cube.geometry.vertices[0].y*scaleState, 
     	 2*cube.geometry.vertices[0].z*scaleState), 
-    	// new THREE.MeshLambertMaterial({
-   	//     color: '#' + currentColorCode
-   	//   }));
-   	stone_material);
+    	 new THREE.MeshLambertMaterial({
+   	     color: '#' + currentColorCode
+   	   }));
+   //	stone_material);
       cube2.position.x = cube.position.x;
       cube2.position.y = cube.position.y;
       cube2.position.z = cube.position.z;

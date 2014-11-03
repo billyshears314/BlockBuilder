@@ -26,6 +26,13 @@
       border-style:solid;
       border-width:1px;
       }
+      #command_area{
+			position:absolute;
+			top:140px;     
+      }
+      #command_area > ul > li{
+			list-style-type:none;       
+      }
       
       </style>
   </head>
@@ -41,6 +48,19 @@
   		<div id="black_block" class="color_block" style="background-color:#000000"></div>
 
   	</div>
+  	
+  	<div id="command_area">
+  		<ul>
+  			<strong>Commands</strong>
+			<li>a -> left</li>
+			<li>d -> right</li>
+			<li>w -> up</li>
+			<li>s -> down</li>  
+			<li>z -> back</li>  
+			<li>x -> forward</li>  
+			<li>k -> create new block</li>    	
+  		</ul>
+	</div>  	
   	
    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <!--<button id="update" type="button">Update</button>-->
