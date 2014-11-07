@@ -56,5 +56,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
+console.log("Listening on port 3000");
 
 module.exports = app;
